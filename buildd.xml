@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="newproject" default="jaar"
+	basedir="C:\Eclipse Neon RC2\eclipse-jee-neon-RC2-win32-x86_64\eclipse\@user.home\workspace\assesment3">
+	<target name="jaar">
+		<war destfile="appliction.war" needxmlfile="false" >
+		<fileset dir="C:\Eclipse Neon RC2\eclipse-jee-neon-RC2-win32-x86_64\eclipse\@user.home\workspace\assesment3\WebContent"/>
+		</war>
+
+	</target>
+	<target name="copy">
+		<copy file="C:\Eclipse Neon RC2\eclipse-jee-neon-RC2-win32-x86_64\eclipse\@user.home\workspace\assesment3\appliction.war" tofile="D:\Tomcat\apache-tomcat-8.5.24\webapps\appliction.war" />
+	</target>
+</project>
+
+
+
+

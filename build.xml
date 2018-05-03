@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="newproject" default="dir1" basedir=".">
+<target name="dir1">
+ <javac srcdir="C:\Eclipse Neon RC2\eclipse-jee-neon-RC2-win32-x86_64\eclipse\@user.home\workspace\Sample\src"
+         destdir="D:\suguna\bin" fork="true"/>
+         </target>
+         <target name="jaar">
+         <jar destfile="D:\suguna\jar/app.jar" basedir="D:\suguna\bin">
+         <manifest> 
+         <attribute name="Main-Class"
+         value="Main"/></manifest>
+         </jar>
+         </target>
+         <target name="copy">
+         <copy file="D:\suguna\jar/app.jar" todir="dest.dir"/>
+         </target>
+         <target name="run">
+         <java jar="dest.dir/app.jar" fork="true">
+         </java>
+         </target>
+         </project>
+         
